@@ -1,8 +1,20 @@
 # clean code and S.O.L.I.D
-# clean arquitecture 
+  $ https://youtu.be/jKdt-BnTTR0
+  $ https://youtu.be/mmIVTQFULTs
+  $ https://youtu.be/VehEHcH1UK0
+# clean arquitecture
+  $ https://youtube.com/playlist?list=PL42UNLc8e48TF9l07z_tLGHzmC_d-yfJJ
 # React.ts
+  $ https://youtube.com/playlist?list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29
+  $ https://youtu.be/Uij4ZAojGH8
 # Vitest
+  $ https://youtu.be/_t9l2TwGioc
 # Vite 
+  $ https://youtu.be/UX4gvort2TU
+  $ https://youtu.be/CMwICBRbRzE
 # Typescript
+  $ https://youtu.be/15VKbky2gB4
 # Sass
+  $ https://youtu.be/kaSVabk-jbA
 # json
+  $ https://youtu.be/RhxOTqFbI5Q
