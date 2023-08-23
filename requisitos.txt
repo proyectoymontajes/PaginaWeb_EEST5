@@ -1,0 +1,8 @@
+# clean code and S.O.L.I.D
+# clean arquitecture 
+# React.ts
+# Vitest
+# Vite 
+# Typescript
+# Sass
+# json
