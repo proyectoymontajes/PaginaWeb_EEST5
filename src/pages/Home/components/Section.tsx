@@ -13,7 +13,6 @@ interface Item {
 }
 
 export const Section = ({title, items} : Props) => {
-    console.log(items)
     return (
         <>
             <div className='section'>
