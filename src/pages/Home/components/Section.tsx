@@ -20,7 +20,7 @@ export const Section = ({title, items} : Props) => {
                 <div className="items">
                     {
                         items?.map( item => (
-                            <div className="item"> 
+                            <div className="item" key={item.item}> 
                                 {item.logo && item.logo} {item.item}
                             </div>
                         ))

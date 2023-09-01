@@ -20,7 +20,7 @@ export const Carousel = () => {
                         alt="..."/>
                     <div className="overlay">
                         <h1 className="container__typing">
-                            Escuela Tecnica N°5 Temperley.
+                            Escuela Técnica N°5 Temperley.
                         </h1>
                     </div>
                 </div>
