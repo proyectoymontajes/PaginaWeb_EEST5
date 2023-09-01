@@ -7,7 +7,6 @@ interface Item {
     imgs?: string[];
     group: string;
     path: string;
-    alt: string;
 }
 
 interface ListProyectsProps {
