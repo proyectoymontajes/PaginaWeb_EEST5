@@ -1,11 +1,18 @@
+import { Suspense } from 'react'
 import { Route, Routes } from "react-router"
-import Home from "../pages/Home"
+import routesApp from './routes'
 
 const AppRouter = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-        </Routes>
+        <Suspense fallback={null}>
+            <Routes>
+                {
+                    routesApp.map(({ path, element: Element }) => {
+                        return <Route key={path} path={path} element={<Element />} />
+                    })
+                }
+            </Routes>
+        </Suspense>
     )
 }
 
