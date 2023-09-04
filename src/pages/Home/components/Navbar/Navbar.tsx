@@ -1,7 +1,6 @@
-import Image from "../../../assets/logo-escuela.png";
-
-import '../styles.css'
-import { Section } from '../components/Section';
+import Image from "../../../../assets/logo-escuela.png";
+import '../../styles.css'
+import { Section } from './Section';
 
 import { useState } from "react";
 

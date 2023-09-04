@@ -1,7 +1,8 @@
 
 import {Carousel} from "./components/Carousel";
-import {Navbar} from './components/Navbar';
+import {Navbar} from './components/Navbar/Navbar';
 import { Proyectos } from './components/Proyectos';
+import { SobreNosotros } from './components/SobreNosotros/SobreNosotros';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
             <Navbar/>
             <Carousel/>
             <Proyectos/>
+            <SobreNosotros/>
         </>
 
     )
