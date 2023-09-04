@@ -17,11 +17,16 @@
     margin: 0px;
 }
 
-.container-proyects h2{
+.category {
+    width: 87vw;
+}
+
+.category h2{
     color: #fff;
     margin-top: 15px;
     font-size: 40px;
     background-color: #000;
+    text-align: start;
 }
 
 .list-proyects {
@@ -33,7 +38,7 @@
 .menu-proyects{
     width: 100vw;
     background-color: #fff;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;

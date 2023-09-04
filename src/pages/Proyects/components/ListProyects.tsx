@@ -17,8 +17,9 @@ interface ListProyectsProps {
 export const ListProyects = ({ category, items }: ListProyectsProps) => {
     return (
         <div className="container-proyects">
-            <h2>{category}</h2>
-
+            <div className="category">
+                <h2>{category}</h2>
+            </div>
             <div className="list-proyects">
                 {items.map((item) => (
                     <CardProyect key={item.title} {...item} />
