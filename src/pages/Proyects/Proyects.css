@@ -29,3 +29,56 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.menu-proyects{
+    width: 100vw;
+    background-color: #fff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-proyects input{
+    background-color: #fff;
+    border: 1px solid #8b8888;
+    color: #000;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-radius: 20px;
+    height: 30px;
+    width: 450px;
+    outline: none;
+}
+
+.menu-proyects h1{
+    position: absolute;
+    left: 15%;
+}
+
+.menu-proyects .search-icon {
+    cursor: pointer;
+    margin-left: -30px;
+    background-color: transparent;
+}
+
+.menu-proyects .search-icon path {
+    color: #3b3a3a;
+}
+
+.menu-proyects form{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.settings-icon{
+    cursor: pointer;
+    margin-left: -20px;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+.settings-icon path {
+    color: #3b3a3a;
+}
