@@ -11,6 +11,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../styles.css'
 
 export const Carousel = () => {
+
+    const scrollToSection = (section:string) => {
+        const sectionScroll = document.getElementById(section); // Reemplaza 'targetSection' con el ID de la sección a la que deseas desplazarte.
+        
+        if (sectionScroll) {
+          sectionScroll.scrollIntoView({
+            behavior: 'smooth', // Esto activa la animación de desplazamiento suave.
+            block: 'start',     // Esto alineará la parte superior de la sección con la parte superior de la ventana.
+          });
+        }
+      };
+
     return (
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
@@ -20,7 +32,7 @@ export const Carousel = () => {
                         alt="..."/>
                     <div className="overlay">
                         <h1 className="container__typing">
-                            Escuela Tecnica N°5 Temperley.
+                            Escuela Técnica N°5 Temperley.
                         </h1>
                     </div>
                 </div>
@@ -30,15 +42,21 @@ export const Carousel = () => {
                         alt="..."/>
                     <div className="overlay-proyectos">
                         <h1 className="container__proyectos">
-                            CONOCE ACERCA DE NUESTROS PROYECTOS
+                            CONOCÉ ACERCA DE NUESTROS PROYECTOS
                         </h1>
-                        <button className="button-informacion">MÁS INFORMACIÓN</button>
+                        <button className="button-informacion" onClick={() => scrollToSection('proyects')}>MÁS INFORMACIÓN</button>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={patio}
                         className="d-block w-100"
                         alt="..."/>
+                         <div className="overlay-proyectos">
+                        <h1 className="container__proyectos">
+                            CONOCÉ ACERCA DE NOSOTROS
+                        </h1>
+                        <button className="button-informacion" onClick={() => scrollToSection('about-us')}>MÁS INFORMACIÓN</button>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src={robotica}

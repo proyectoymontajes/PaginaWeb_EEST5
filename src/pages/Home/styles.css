@@ -1,10 +1,12 @@
+/* Estilos del navbar */
+
 .header {
-    background-color: #151e21 !important;
+    background-color: black !important;
 }
 
 .contain-title {
     padding-top: 20px;
-    background-color: #151e21;
+    background-color: transparent;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -17,33 +19,33 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #151e21;
+    background-color: transparent;
 }
 
 .name-page{
     display: block !important;
     font-size: 40px;
     font-weight: 600;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Chakra Petch', sans-serif !important;
     text-align: center;
     color: white;
-    background-color: #151e21;
+    background-color: transparent;
 }
 
 .image {
-    background-color: #151e21;
+    background-color: transparent;
     height: 130px;
 }
 
 .sections {
-    background-color: #151e21;
+    background-color: black;
     display: flex;
     justify-content: center;
 }
 
 .section {
     cursor: pointer;
-    background-color: #151e21;
+    background-color: black;
     margin: 10px;
     &:hover{
         transition: 0.5;
@@ -78,8 +80,14 @@
     margin: 10px;
 }
 
-.d-block {
+/* estilos del carrusel */
 
+.carousel {
+    overflow: hidden;
+    max-height: 550px;
+}
+
+.d-block {
   opacity: 0.3;
 }
 
@@ -162,3 +170,154 @@
         cursor: pointer;
       }
   }
+
+
+/* Estilos de proyectos */
+
+.contain-proyects{
+    background-color: black;
+    padding: 10px;
+
+}
+
+.title-proyects {
+    background-color: black;
+
+    margin-bottom: -10px;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+}
+
+.contain-proyects {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.read-more {
+    cursor: pointer;
+    display: flex; 
+    height: 100px;
+    overflow: hidden;
+    background: black; 
+    background-size: 100% 200%;
+    transition: 0.5s;
+    padding-left: 40px;
+    padding-right: 40px;
+    &:hover{
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color: #fff;
+        .text-read-more {
+            color:black
+        }
+        .arrow-read-more {
+            color: black;
+        }
+        
+    }
+}
+
+.text-read-more {
+    margin-bottom: -0.5px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    background-color: transparent;
+    
+}
+
+.arrow-read-more {
+    margin-bottom: -0.5px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    background-color: transparent;
+    margin-left: auto;
+}
+
+/* Estilos de proyectos */
+
+.title-about-us-section {
+    background-color: white;
+    margin-bottom: -10px;
+    padding: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+.contain-about-us {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+}
+
+.contain-info-about-us {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.contain-text {
+    background-color: transparent;
+    flex: 1; 
+}
+
+.contain-title-about-us {
+    background-color: transparent;
+}
+
+.description-about-us {
+    color: black;
+    background-color: transparent;
+}
+
+.title-about-us {
+    color: black;
+    background-color: transparent;
+}
+
+.contain-img-about-us {
+    background-color: transparent;
+}
+
+.img-about-us {
+    width: 400px;
+    height: 200px;
+    margin-right: 8px;
+}
+
+.contain-info-about-us.img-left {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo cuando la imagen está a la derecha */
+.contain-info-about-us.img-right {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse; /* Cambiamos el orden de los elementos cuando la imagen está a la derecha */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
