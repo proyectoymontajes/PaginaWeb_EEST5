@@ -1,24 +1,19 @@
 .container-proyectsPage {
     width: 100%;
     min-height: 100vh;
-    background-color: #000;
     overflow-x: hidden;
 }
 
-.container-proyects {
-    width: 100vw;
+.container-proyectsPage{
     overflow: hidden;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 100vw;
-    margin: 0px;
+}
+
+.container-proyects{
+    width: 80vw;
 }
 
 .category {
-    width: 87vw;
+    width: 80vw;
 }
 
 .category h2{
@@ -30,7 +25,7 @@
 }
 
 .list-proyects {
-    width: 90vw;
+    width: 80vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -38,7 +33,7 @@
 .menu-proyects{
     width: 100vw;
     background-color: #fff;
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,4 +81,26 @@
 
 .settings-icon path {
     color: #3b3a3a;
+}
+
+.settings-menu{
+    background-color: #000;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.section-proyects{
+    display: flex;
+}
+
+.settings-menu ul{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.settings-menu li {
+    margin: 10px;
 }

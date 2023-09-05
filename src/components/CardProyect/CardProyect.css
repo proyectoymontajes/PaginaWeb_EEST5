@@ -1,5 +1,5 @@
 .card-proyect {
-    width: 350px;
+    width: 300px;
     height: auto;
     cursor: pointer;
     overflow: hidden;
@@ -15,7 +15,7 @@
   }
   
   .container-img img {
-    width: 350px;
+    width: 300px;
   }
   
   .card-desc {

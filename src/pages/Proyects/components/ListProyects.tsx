@@ -16,7 +16,7 @@ interface ListProyectsProps {
 
 export const ListProyects = ({ category, items }: ListProyectsProps) => {
     return (
-        <div className="container-proyects">
+        <>
             <div className="category">
                 <h2>{category}</h2>
             </div>
@@ -25,6 +25,6 @@ export const ListProyects = ({ category, items }: ListProyectsProps) => {
                     <CardProyect key={item.title} {...item} />
                 ))}
             </div>
-        </div>
+        </>
     )
 }
