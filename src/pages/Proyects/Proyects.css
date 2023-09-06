@@ -104,3 +104,19 @@
 .settings-menu li {
     margin: 10px;
 }
+
+.settings-menu label{
+    cursor: pointer;
+    user-select: none;
+}
+
+.settings-menu input{
+    cursor: pointer;
+}
+
+.settings-menu h3 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}

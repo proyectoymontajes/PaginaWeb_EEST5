@@ -1,10 +1,10 @@
 import { items } from '../../data/dataProyects';
 import './Proyects.css'
-import { CheckboxFilter } from './components/CheckboxFilter';
 import { ListProyects } from './components/ListProyects'
 
 import SearchIcon from '@mui/icons-material/Search';
 import TuneIcon from '@mui/icons-material/Tune';
+import { ListFilterst } from './components/ListFilterst';
 
 const Proyects = () => {
     return (
@@ -20,17 +20,7 @@ const Proyects = () => {
 
             <div className="section-proyects">
                 <div className='settings-menu'>
-                    <ul>
-                        <li>
-                            <CheckboxFilter label='Robotica'/>
-                        </li>
-                        <li>
-                            <CheckboxFilter label='Robotica'/>
-                        </li>
-                        <li>
-                            <CheckboxFilter label='Robotica'/>
-                        </li>
-                    </ul>
+                    <ListFilterst />
                 </div>
                 <div>
                     {
