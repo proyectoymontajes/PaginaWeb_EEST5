@@ -12,6 +12,10 @@ const routes: Route[] = [
     {
         path: "/",
         element: lazy( ()=> import("../pages/Home") ) 
+    },
+    {
+        path:"/proyects",
+        element: lazy( ()=> import("../pages/Proyects") )
     }
 ]
 
