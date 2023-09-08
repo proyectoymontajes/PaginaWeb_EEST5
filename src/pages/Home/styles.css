@@ -129,8 +129,8 @@
     margin: 0 auto; 
     letter-spacing: .15em;
     animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+      typing 2.5s steps(30, end),
+      blink-caret .7s step-end infinite;
   }
   @keyframes typing {
     from { width: 0 }
@@ -321,3 +321,27 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 860px) {
+    .contain-info-about-us.img-left {
+        background-color: transparent;
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /* Estilo cuando la imagen está a la derecha */
+    .contain-info-about-us.img-right {
+        background-color: transparent;
+        display: block;
+        flex-direction: row-reverse; /* Cambiamos el orden de los elementos cuando la imagen está a la derecha */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .contain-img-about-us {
+        text-align: center;
+        overflow: hidden;
+    }
+}
