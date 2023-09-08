@@ -1,15 +1,12 @@
 import { Category } from '../../../data/dataProyects';
 
    
-interface ListFilterst {
-    state : Category[],
-    action : {
+interface Action {
         type : string,
         payload : string[], 
-    }
 }
  
-export const listReducer = ({ state = [], action}: ListFilterst) => {
+export const listReducer = (state : Category[], action : Action) => {
     switch (action.type) {
         case 'ADD':
             return [ ...state.filter( category => action.payload.includes(category.title)) ];
