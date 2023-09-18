@@ -1,20 +1,31 @@
 import { createContext, useReducer } from 'react'
 import { listReducer } from '../reducer/listReducer';
-import { items } from '../../../data/dataProyects';
+import { Category, items } from '../../../data/dataProyects';
 
-const [state, dispatch] = useReducer(listReducer, items);
-
-const listContext = createContext({
-    state,
-    dispatch
-});
-
-const { Provider } = listContext
-
-const ListContextProvider = (children: React.ReactNode) => {
-    <Provider value={{ state, dispatch }}>
-        {children}
-    </Provider>
+interface Props {
+    children: JSX.Element | JSX.Element[]
 }
 
-export default ListContextProvider
+interface ListContextValue {
+    state: Category[];
+    dispatch: React.Dispatch<any>;
+}
+
+export const listContext = createContext<ListContextValue>({
+    state: [],
+    dispatch: () => { },
+});
+
+export const ListContextProvider = ({ children }: Props) => {
+
+    const [state, dispatch] = useReducer(listReducer, items);
+
+
+    const { Provider } = listContext
+
+    return (
+        <Provider value={{ state, dispatch }}>
+            {children}
+        </Provider>
+    )
+}
