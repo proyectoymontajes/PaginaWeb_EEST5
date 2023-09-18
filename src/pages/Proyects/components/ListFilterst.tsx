@@ -10,7 +10,6 @@ export const ListFilterst = () => {
         item.title
     ))
 
-    console.log(state)
     return (
         <>
             <ul>
