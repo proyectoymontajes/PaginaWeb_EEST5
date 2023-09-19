@@ -1,12 +1,8 @@
-import { useContext } from 'react'
 import { CheckboxFilter } from './CheckboxFilter'
-import { listContext } from '../context/ListContext'
+import { items } from '../../../data/dataProyects'
 
 export const ListFilterst = () => {
-
-    const { state } = useContext(listContext)
-
-    const itemList = state.map((item) => (
+    const itemList = items.map((item) => (
         item.title
     ))
 
