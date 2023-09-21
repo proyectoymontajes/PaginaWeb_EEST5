@@ -1,11 +1,11 @@
-import { items } from '../../../data/dataProyects'
 import { CheckboxFilter } from './CheckboxFilter'
-
-const itemList = items.map((item) => (
-    item.title
-))
+import { items } from '../../../data/dataProyects'
 
 export const ListFilterst = () => {
+    const itemList = items.map((item) => (
+        item.title
+    ))
+
     return (
         <>
             <ul>
