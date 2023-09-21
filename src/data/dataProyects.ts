@@ -8,12 +8,12 @@ interface Item {
     path: string;
 }
 
-interface category {
+export interface Category {
     title: string;
     items: Item[];
 }
 
-export const items: category[] = [
+export const items: Category[] = [
     {
         title: "Robotica",
         items: [
