@@ -10,6 +10,7 @@ import {ChevronDown} from "./Icons.jsx";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 export const ItemDropdown = () => {
@@ -39,13 +40,18 @@ export const ItemDropdown = () => {
             }>
                 <DropdownItem key="autoscaling"
                     startContent={<FacebookIcon/>}>
-                    Facebook
+                    Industrial de Temperley - Oficial
                 </DropdownItem>
 
                 <DropdownItem key="usage_metrics"
-                    startContent={<LocationOnIcon/>}>Pringles 27-Temperley</DropdownItem>
+                    startContent={<LocationOnIcon/>}>Pringles 27-Temperley
+                </DropdownItem>
                 <DropdownItem key="usage_metrics"
                     startContent={<LocalPhoneIcon/>}>011 - 4244 - 3639</DropdownItem>
+                <DropdownItem key="usage_metrics"
+                    startContent={<InstagramIcon/>}>
+                        @roboticatec5
+                </DropdownItem>
             </DropdownMenu>
         </Dropdown>
     )

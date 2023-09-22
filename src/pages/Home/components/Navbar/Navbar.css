@@ -1,7 +1,7 @@
 .nav {
     padding-top: 20px;
     color: #fff;
-    background-color: black;
+    background-color: black !important;
 }
 
 .menu {

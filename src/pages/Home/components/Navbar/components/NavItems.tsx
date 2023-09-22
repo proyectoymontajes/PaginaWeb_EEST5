@@ -11,7 +11,7 @@ export const NavItems = () => {
                 </Link>
             </NavbarItem>
             <NavbarItem>
-                <Link color="foreground" href="#">
+                <Link color="foreground" href="/proyects">
                     Proyectos
                 </Link>
             </NavbarItem>
