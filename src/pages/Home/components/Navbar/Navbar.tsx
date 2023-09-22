@@ -1,76 +1,75 @@
+import React from "react";
 import Image from "../../../../assets/logo-escuela.png";
 import '../../styles.css'
-import { Section } from './Section';
 
-import { useState } from "react";
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarContent,
+    NavbarItem,
+    Link,
+    Button,
+    NavbarMenuToggle,
+    NavbarMenu,
+    NavbarMenuItem
+} from "@nextui-org/react";
 
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+export default function App() {
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-
-export const Navbar = () => {
-
-    
-    const [contactos] = useState([
-        {
-            item: "FACEBOOK",
-            path: "https://www.facebook.com/IndustrialDeTemperley/?locale=es_LA",
-            logo: <FacebookIcon className="logo"/>
-        },
-        {
-            item: "Pringles 27-Temperley",
-            path: "https://www.google.com/maps/place/Escuela+T%C3%A9cnica+Secundaria+N%C2%B05/@-34.7689249,-58.4013915,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd2e9201ff88f:0xedba7d92ae3757af!8m2!3d-34.7689293!4d-58.3988166!16s%2Fg%2F11r8gqdf2?entry=ttu",
-            logo: <LocationOnIcon className="logo"/>
-        },
-        {
-            item: "011 - 4244 - 3639",
-            path: "https://www.google.com/maps/place/Escuela+T%C3%A9cnica+Secundaria+N%C2%B05/@-34.7689249,-58.4013915,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd2e9201ff88f:0xedba7d92ae3757af!8m2!3d-34.7689293!4d-58.3988166!16s%2Fg%2F11r8gqdf2?entry=ttu",
-            logo:   <LocalPhoneIcon className="logo"/>
-        }
-    ])
-
-    const [sobreNosotros] = useState([
-        {
-            item: "HISTORIA"
-        },
-    ])
-
-    const [proyectos] = useState([
-        {
-            item: "Robot sumos"
-        },
-        {
-            item: "Brazo robotico"
-        },
-        {
-            item: "Seguidor de linea"
-        },
-        {
-            item: "Smartwatch"
-        },
-    ])
+    const menuItems = ["Inicio", "Sobre Nosotros", "Contactanos", "Proyectos",];
 
     return (
-        <div className="header">
-            <div className='contain-title'>
-                <img alt="" src={Image}
-                    className='image'/>
-                <div className="title">
-                    <h3 className="name-page">TALLER</h3>
-                    <h3 className="name-page">ELECTRÓNICA</h3>
-                </div>
-            </div>
+        <Navbar onMenuOpenChange={setIsMenuOpen}
+            className="dark nav">
+            <NavbarContent>
+                <NavbarMenuToggle aria-label={
+                        isMenuOpen ? "Close menu" : "Open menu"
+                    }
+                    className="sm:hidden"/>
+                <NavbarBrand>
+                    <img alt=""
+                        src={Image}
+                        className='image'/>
+                    <p className="font-bold">E.E.S.T N°5</p>
+                </NavbarBrand>
+            </NavbarContent>
 
-            <div className="sections">
-                <Section title="INICIO" url="/"/>
-                <Section title="CONTACTANOS"
-                    items={contactos}/>
-                <Section title="SOBRE NOSOTROS"
-                    items={sobreNosotros}/>
-                <Section title="PROYECTOS"
-                    items={proyectos}/>
-            </div>
-        </div>
-    )
+            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                {
+                menuItems.map((item, index) => (
+                    <NavbarItem key={
+                        `${item}-${index}`
+                    }>
+                        <Link color="foreground" className="w-full" href="#" size="lg">
+                            {item} </Link>
+                    </NavbarItem>
+                ))
+            } </NavbarContent>
+            <NavbarContent justify="end">
+                <NavbarItem className="hidden lg:flex">
+                    <Link href="#">Login</Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Button as={Link}
+                        color="primary"
+                        href="#"
+                        variant="flat">
+                        Sign Up
+                    </Button>
+                </NavbarItem>
+            </NavbarContent>
+            <NavbarMenu> {
+                menuItems.map((item, index) => (
+                    <NavbarMenuItem key={
+                            `${item}-${index}`
+                        }
+                        className="menu">
+                        <Link color="foreground" className="w-full" href="#" size="lg">
+                            {item} </Link>
+                    </NavbarMenuItem>
+                ))
+            } </NavbarMenu>
+        </Navbar>
+    );
 }

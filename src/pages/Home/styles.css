@@ -1,5 +1,18 @@
 /* Estilos del navbar */
 
+.nav {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.font-bold {
+    margin-bottom: 0px;
+}
+
 .header {
     background-color: black !important;
 }
@@ -34,7 +47,7 @@
 
 .image {
     background-color: transparent;
-    height: 130px;
+    height: 80px;
 }
 
 .sections {
@@ -85,6 +98,8 @@
 .carousel {
     overflow: hidden;
     max-height: 550px;
+  background-color: black;
+
 }
 
 .d-block {
@@ -206,6 +221,7 @@
     height: 100px;
     overflow: hidden;
     background: black; 
+    color: #fff;
     background-size: 100% 200%;
     transition: 0.5s;
     padding-left: 40px;
