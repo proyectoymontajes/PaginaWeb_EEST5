@@ -1,0 +1,90 @@
+.carousel {
+    overflow: hidden;
+    max-height: 550px;
+  background-color: black;
+
+}
+
+.d-block {
+  opacity: 0.3;
+}
+
+.contain-button-carousel {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.carousel-control-prev-icon,  .carousel-control-next-icon{
+    background-color: transparent;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 853px;
+    box-sizing: border-box;
+  }
+  .container__typing{
+    background-color: transparent;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret .7s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .overlay-proyectos {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+  }
+  .container__proyectos{
+    background-color: transparent;
+  }
+
+  .button-informacion{
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 90px;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: #fff;
+        color: #151e21;
+        cursor: pointer;
+      }
+  }

@@ -1,14 +1,14 @@
-import frenteEscuela from "../../../assets/carousel/frente-escuela.jpg";
-import frenteEscuela2 from "../../../assets/carousel/frente-escuela2.jpg";
-import patio from "../../../assets/carousel/patio.jpg";
-import robotica from "../../../assets/carousel/robotica.jpg";
-import robotica2 from "../../../assets/carousel/robotica2.jpg";
+import frenteEscuela from "../../../../assets/carousel/frente-escuela.jpg";
+import frenteEscuela2 from "../../../../assets/carousel/frente-escuela2.jpg";
+import patio from "../../../../assets/carousel/patio.jpg";
+import robotica from "../../../../assets/carousel/robotica.jpg";
+import robotica2 from "../../../../assets/carousel/robotica2.jpg";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import '../styles.css'
+import './Carousel.css'
 
 export const Carousel = () => {
 

@@ -1,0 +1,19 @@
+.nav {
+    padding-top: 20px;
+    color: #fff;
+    background-color: black;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.font-bold {
+    margin-bottom: 0px;
+}
+
+.logo-nav {
+    background-color: transparent;
+    height: 70px;
+    margin-right: 10px;
+}

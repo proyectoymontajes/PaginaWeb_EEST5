@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../../assets/logo-escuela.png";
-import '../../styles.css'
+import './Navbar.css'
 
 import {
     Navbar,
@@ -8,7 +8,6 @@ import {
     NavbarContent,
     NavbarItem,
     Link,
-    Button,
     NavbarMenuToggle,
     NavbarMenu,
     NavbarMenuItem
@@ -30,7 +29,7 @@ export default function App() {
                 <NavbarBrand>
                     <img alt=""
                         src={Image}
-                        className='image'/>
+                        className='logo-nav'/>
                     <p className="font-bold">E.E.S.T N°5</p>
                 </NavbarBrand>
             </NavbarContent>
@@ -47,24 +46,14 @@ export default function App() {
                 ))
             } </NavbarContent>
             <NavbarContent justify="end">
-                <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Button as={Link}
-                        color="primary"
-                        href="#"
-                        variant="flat">
-                        Sign Up
-                    </Button>
-                </NavbarItem>
+                
             </NavbarContent>
-            <NavbarMenu> {
+            <NavbarMenu className="menu"> {
                 menuItems.map((item, index) => (
                     <NavbarMenuItem key={
                             `${item}-${index}`
                         }
-                        className="menu">
+                        >
                         <Link color="foreground" className="w-full" href="#" size="lg">
                             {item} </Link>
                     </NavbarMenuItem>
