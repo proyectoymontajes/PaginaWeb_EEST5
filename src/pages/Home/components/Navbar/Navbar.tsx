@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "../../../../assets/logo-escuela.png";
 import './Navbar.css'
+import {NavItems} from './components/NavItems';
 
 import {
     Navbar,
     NavbarBrand,
     NavbarContent,
-    NavbarItem,
-    Link,
     NavbarMenuToggle,
     NavbarMenu,
-    NavbarMenuItem
+    NavbarMenuItem,
 } from "@nextui-org/react";
+
 
 export default function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-    const menuItems = ["Inicio", "Sobre Nosotros", "Contactanos", "Proyectos",];
+
 
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen}
@@ -35,30 +35,14 @@ export default function App() {
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                {
-                menuItems.map((item, index) => (
-                    <NavbarItem key={
-                        `${item}-${index}`
-                    }>
-                        <Link color="foreground" className="w-full" href="#" size="lg">
-                            {item} </Link>
-                    </NavbarItem>
-                ))
-            } </NavbarContent>
-            <NavbarContent justify="end">
-                
+                <NavItems/>
             </NavbarContent>
-            <NavbarMenu className="menu"> {
-                menuItems.map((item, index) => (
-                    <NavbarMenuItem key={
-                            `${item}-${index}`
-                        }
-                        >
-                        <Link color="foreground" className="w-full" href="#" size="lg">
-                            {item} </Link>
-                    </NavbarMenuItem>
-                ))
-            } </NavbarMenu>
+            <NavbarContent justify="end" />
+            <NavbarMenu className="menu">
+                <NavbarMenuItem>
+                    <NavItems/>
+                </NavbarMenuItem>
+            </NavbarMenu>
         </Navbar>
     );
 }
