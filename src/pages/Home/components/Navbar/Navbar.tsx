@@ -1,23 +1,22 @@
 import React from "react";
 import Image from "../../../../assets/logo-escuela.png";
-import '../../styles.css'
+import './Navbar.css'
+import {NavItems} from './components/NavItems';
 
 import {
     Navbar,
     NavbarBrand,
     NavbarContent,
-    NavbarItem,
-    Link,
-    Button,
     NavbarMenuToggle,
     NavbarMenu,
-    NavbarMenuItem
+    NavbarMenuItem,
 } from "@nextui-org/react";
+
 
 export default function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-    const menuItems = ["Inicio", "Sobre Nosotros", "Contactanos", "Proyectos",];
+
 
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen}
@@ -30,46 +29,20 @@ export default function App() {
                 <NavbarBrand>
                     <img alt=""
                         src={Image}
-                        className='image'/>
+                        className='logo-nav'/>
                     <p className="font-bold">E.E.S.T N°5</p>
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                {
-                menuItems.map((item, index) => (
-                    <NavbarItem key={
-                        `${item}-${index}`
-                    }>
-                        <Link color="foreground" className="w-full" href="#" size="lg">
-                            {item} </Link>
-                    </NavbarItem>
-                ))
-            } </NavbarContent>
-            <NavbarContent justify="end">
-                <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Button as={Link}
-                        color="primary"
-                        href="#"
-                        variant="flat">
-                        Sign Up
-                    </Button>
-                </NavbarItem>
+                <NavItems/>
             </NavbarContent>
-            <NavbarMenu> {
-                menuItems.map((item, index) => (
-                    <NavbarMenuItem key={
-                            `${item}-${index}`
-                        }
-                        className="menu">
-                        <Link color="foreground" className="w-full" href="#" size="lg">
-                            {item} </Link>
-                    </NavbarMenuItem>
-                ))
-            } </NavbarMenu>
+            <NavbarContent justify="end" />
+            <NavbarMenu className="menu">
+                <NavbarMenuItem>
+                    <NavItems/>
+                </NavbarMenuItem>
+            </NavbarMenu>
         </Navbar>
     );
 }

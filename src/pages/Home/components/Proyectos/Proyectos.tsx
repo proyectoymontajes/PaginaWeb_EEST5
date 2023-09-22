@@ -1,4 +1,6 @@
-import CardProyect from '../../../components/CardProyect/index';
+import CardProyect from "../../../../components/CardProyect"
+import './Proyectos.css';
+
 
 export const Proyectos = () => {
     return (
