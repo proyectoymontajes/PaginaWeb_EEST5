@@ -1,8 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
-  margin: 0px;
-  padding: 0px;
-  background-color: black;
-  color: rgba(255, 255, 255, 0.87);
+  /* background-color: black; */
+  /* color: rgba(255, 255, 255, 0.87); */
   font-family: 'Montserrat', sans-serif;
 }
 
