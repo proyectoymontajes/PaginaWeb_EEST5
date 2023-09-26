@@ -22,7 +22,7 @@ export const SearchBar = () => {
                     name="search"
                     placeholder='Robot sumo'
                 />
-                <SearchIcon className='search-icon' />
+                
             </form>
         </div>
     )
