@@ -10,6 +10,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import './Carousel.css'
 import Item from "./components/item";
+import { Button } from "./components/button";
 
 export const Carousel = () => {
 
@@ -62,18 +63,8 @@ export const Carousel = () => {
                 <Item src={robotica2} />
 
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <div className="contain-button-carousel">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                </div>
-                {/* <span className="visually-hidden">Previous</span> */}
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <div className="contain-button-carousel">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                </div>
-                {/* <span className="visually-hidden">Next</span> */}
-            </button>
+            <Button type="prev" />
+            <Button type="next" />
         </div>
     )
 }
