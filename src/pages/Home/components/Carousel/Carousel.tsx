@@ -31,9 +31,11 @@ export const Carousel = () => {
                 <Item
                     active={true}
                     src={bonaerenses2023}
+                    classname="container-1"
+                    imgClassName="bonaerenses"
                 >
                     <h1
-                        className="container__typing"
+                        className="container__typing title-active"
                         // style={{ marginTop: '0' }}
                     >
                         Escuela Técnica N°5 Temperley.
