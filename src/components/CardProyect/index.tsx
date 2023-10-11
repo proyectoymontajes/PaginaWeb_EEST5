@@ -5,13 +5,12 @@ import './CardProyect.css'
 interface CardProyectProps {
     img: string;
     title: string;
-    alt: string;
 }
 
-const CardProyect = ({ img, title, alt }: CardProyectProps) => {
+const CardProyect = ({ img, title }: CardProyectProps) => {
     return (
         <div className="card-proyect">
-            <CardProyectImg img={img} alt={alt} />
+            <CardProyectImg img={img} alt={title} />
             <CardProyectDesc title={title} />
         </div>
     )

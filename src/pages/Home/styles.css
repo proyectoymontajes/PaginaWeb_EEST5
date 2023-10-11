@@ -1,0 +1,104 @@
+
+/* Estilos de proyectos */
+
+.title-about-us-section {
+    background-color: white;
+    margin-bottom: -10px;
+    padding: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+.contain-about-us {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+}
+
+.contain-info-about-us {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.contain-text {
+    background-color: transparent;
+    flex: 1; 
+}
+
+.contain-title-about-us {
+    background-color: transparent;
+}
+
+.description-about-us {
+    color: black;
+    background-color: transparent;
+}
+
+.title-about-us {
+    color: black;
+    background-color: transparent;
+}
+
+.contain-img-about-us {
+    background-color: transparent;
+}
+
+.img-about-us {
+    width: 400px;
+    height: 200px;
+    margin-right: 8px;
+}
+
+.contain-info-about-us.img-left {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo cuando la imagen está a la derecha */
+.contain-info-about-us.img-right {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse; /* Cambiamos el orden de los elementos cuando la imagen está a la derecha */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 860px) {
+    .contain-info-about-us.img-left {
+        background-color: transparent;
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /* Estilo cuando la imagen está a la derecha */
+    .contain-info-about-us.img-right {
+        background-color: transparent;
+        display: block;
+        flex-direction: row-reverse; /* Cambiamos el orden de los elementos cuando la imagen está a la derecha */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .contain-img-about-us {
+        text-align: center;
+        overflow: hidden;
+    }
+}
