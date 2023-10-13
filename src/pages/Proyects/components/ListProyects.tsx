@@ -1,4 +1,5 @@
 import CardProyect from "../../../components/CardProyect";
+import { Category } from '../../../data/dataProyects';
 
 interface Item {
     title: string;
@@ -17,14 +18,23 @@ interface ListProyectsProps {
 export const ListProyects = ({ category, items }: ListProyectsProps) => {
     return (
         <>
-            <div className="category">
-                <h2>{category}</h2>
-            </div>
-            <div className="list-proyects">
-                {items.map((item) => (
-                    <CardProyect key={item.title} {...item} />
-                ))}
-            </div>
+            {
+                items.length !== 0
+                    ?
+                    <>
+                        <div className="category">
+                            <h2>{category}</h2>
+                        </div>
+                        <div className="list-proyects">
+                            {items.map((item) => (
+                                <CardProyect key={item.title} {...item} />
+                            ))}
+                        </div>
+                    </>
+                    :
+                    <></>
+
+            }
         </>
     )
 }
