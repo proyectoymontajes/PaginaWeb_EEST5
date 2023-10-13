@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Category } from "../../../data/dataProyects"
+import { Category } from '../../../data/dataProyects';
 
 export const useFilter = (state: Category[]) => {
 
@@ -35,6 +35,16 @@ export const useFilter = (state: Category[]) => {
         setFilters(filters.filter(filter => filter !== filterName));
     }
 
-    return { state, items, addFilter, deleteFilter }
+    const filterItemsByName = (search: string) => {
+        const result = state.map((category) => {
+            return {
+                ...category,
+                items : category.items.filter( (item)=> item.title.toLowerCase().includes( search.toLowerCase()) ),
+            }
+        });
+        setItems(result)
+    }
+
+    return { state, items, addFilter, deleteFilter, filterItemsByName }
 
 }

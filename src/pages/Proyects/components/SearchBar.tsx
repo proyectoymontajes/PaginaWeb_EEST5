@@ -1,20 +1,28 @@
 import SearchIcon from '@mui/icons-material/Search';
-import { useState } from 'react';
+import { FormEventHandler, useContext, useState } from 'react';
+import { listContext } from '../context/ListContext';
 
 
 export const SearchBar = () => {
 
     const [value, setValue] = useState('');
 
+    const {filterItemsByName} = useContext(listContext)
+
     const handleChange: React.ChangeEventHandler<HTMLInputElement> = ({ target }) => {
         const { value } = target;
         setValue(value);
     }
 
+    const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
+        event.preventDefault();
+        filterItemsByName(value);
+    }
+
     return (
         <div className="menu-proyects">
             {/* <TuneIcon className='settings-icon' fontSize='large' /> */}
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <input
                     onChange={handleChange}
                     value={value}
@@ -22,7 +30,7 @@ export const SearchBar = () => {
                     name="search"
                     placeholder='Robot sumo'
                 />
-                
+
             </form>
         </div>
     )

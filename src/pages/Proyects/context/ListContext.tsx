@@ -11,7 +11,7 @@ interface ListContextValue {
     itemsList: Category[];
     addFilter: (parameter: string) => void;
     deleteFilter: (parameter: string) => void;
-
+    filterItemsByName: (parameter: string) => void;
 }
 
 export const listContext = createContext<ListContextValue>({
@@ -19,15 +19,16 @@ export const listContext = createContext<ListContextValue>({
     itemsList: [],
     addFilter: () => { },
     deleteFilter: () => { },
+    filterItemsByName: () => { },
 });
 
 export const ListContextProvider = ({ children }: Props) => {
 
-    const { state, items: itemsList, addFilter, deleteFilter } = useFilter(items);
+    const { state, items: itemsList, addFilter, deleteFilter, filterItemsByName } = useFilter(items);
     const { Provider } = listContext
 
     return (
-        <Provider value={{ state, itemsList, addFilter, deleteFilter }}>
+        <Provider value={{ state, itemsList, addFilter, deleteFilter, filterItemsByName }}>
             {children}
         </Provider>
     )
