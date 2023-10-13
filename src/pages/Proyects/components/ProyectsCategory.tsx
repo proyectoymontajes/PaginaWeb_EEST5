@@ -9,7 +9,7 @@ const ProyectsCategory = () => {
         <div>
             {
                 itemsList.map(({ title, items }) => (
-                    <ListProyects key={title} category={title} items={items} />
+                    <ListProyects key={title} title={title} items={items} />
                 ))
             }
         </div   >

@@ -1,21 +1,12 @@
 import CardProyect from "../../../components/CardProyect";
-import { Category } from '../../../data/dataProyects';
-
-interface Item {
-    title: string;
-    img: string;
-    desc: string;
-    imgs?: string[];
-    group: string;
-    path: string;
-}
+import { Item } from '../../../data/dataProyects';
 
 interface ListProyectsProps {
-    category: string;
+    title: string;
     items: Item[];
 }
 
-export const ListProyects = ({ category, items }: ListProyectsProps) => {
+export const ListProyects = ({ title, items }: ListProyectsProps) => {
     return (
         <>
             {
@@ -23,7 +14,7 @@ export const ListProyects = ({ category, items }: ListProyectsProps) => {
                     ?
                     <>
                         <div className="category">
-                            <h2>{category}</h2>
+                            <h2>{title}</h2>
                         </div>
                         <div className="list-proyects">
                             {items.map((item) => (
