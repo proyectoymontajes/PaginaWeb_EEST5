@@ -13,7 +13,7 @@ import {
 } from "@nextui-org/react";
 
 
-export default function App() {
+export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
 
@@ -21,7 +21,7 @@ export default function App() {
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen}
             className="dark nav">
-            <NavbarContent>
+            <NavbarContent className="mb-custom brand">
                 <NavbarMenuToggle aria-label={
                         isMenuOpen ? "Close menu" : "Open menu"
                     }
@@ -34,11 +34,11 @@ export default function App() {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden sm:flex gap-4 mb-custom items-custom" justify="center">
                 <NavItems/>
             </NavbarContent>
-            <NavbarContent justify="end" />
-            <NavbarMenu className="menu">
+            <NavbarContent className="mb-custom items-extend" justify="end" />
+            <NavbarMenu className="menu mb-custom">
                 <NavbarMenuItem>
                     <NavItems/>
                 </NavbarMenuItem>
