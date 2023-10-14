@@ -1,26 +1,26 @@
-import {Link, NavbarItem} from '@nextui-org/react';
-import {ItemDropdown} from './ItemDropdown';
+import { NavbarItem } from '@nextui-org/react';
+import { ItemDropdown } from './ItemDropdown';
+import { NavLink } from 'react-router-dom';
+
+import '../Navbar.css'
 
 export const NavItems = () => {
 
     return (
         <>
             <NavbarItem>
-                <Link color="foreground" href="#">
-                    Inicio
-                </Link>
+                <NavLink className="item" to="/">Inicio</NavLink>
             </NavbarItem>
+
             <NavbarItem>
-                <Link color="foreground" href="/proyects">
-                    Proyectos
-                </Link>
+                <NavLink className="item" to="/proyects">Proyectos</NavLink>
             </NavbarItem>
+
             <NavbarItem>
-                <Link color="foreground" href="#">
-                    Sobre nosotros
-                </Link>
+                <NavLink className="item" to="/proyects">Sobre nosotros</NavLink>
             </NavbarItem>
-            <ItemDropdown/>
+
+            <ItemDropdown />
         </>
     )
 }

@@ -18,21 +18,26 @@
     margin-right: 10px;
 }
 
-.mb-custom{
+.mb-custom {
     margin-bottom: 16px;
     padding-left: 32px;
 }
 
-.brand{
-    max-width: 221px ;
+.brand {
+    max-width: 221px;
     max-height: 64px;
 }
 
-.items-custom{
+.items-custom {
     width: 458px;
     justify-content: space-between !important;
 }
 
-.items-extend{
+.items-extend {
     max-width: 249px;
+}
+
+.item {
+    color: #fff;
+    text-decoration: none;
 }

@@ -1,16 +1,16 @@
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css'
 import AppRouter from './router/AppRouter';
-import {Layout} from './pages/Layout/Layout';
+import { Layout } from './pages/Layout/Layout';
 
 
 function App() {
     return (
-        <Layout>
-            <BrowserRouter>
-                <AppRouter/>
-            </BrowserRouter>
-        </Layout>
+        <BrowserRouter>
+            <Layout>
+                <AppRouter />
+            </Layout>
+        </BrowserRouter>
     )
 }
 
