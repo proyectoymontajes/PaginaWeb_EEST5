@@ -1,5 +1,6 @@
 import CardProyect from "../../../../components/CardProyect"
 import './Proyectos.css';
+import { Link } from "react-router-dom";
 
 
 export const Proyectos = () => {
@@ -14,7 +15,7 @@ export const Proyectos = () => {
                 </div>
             </div>
             <div className='read-more'>
-                <p className='text-read-more'>VER MÁS PROYECTOS</p>
+                <p className='text-read-more'><Link to="/proyects">VER MÁS PROYECTOS</Link></p>
                 <div className="spacer"></div>
                 <p className="arrow-read-more"> → </p>
             </div>
