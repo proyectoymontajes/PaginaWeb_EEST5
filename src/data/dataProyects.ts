@@ -3,7 +3,7 @@ interface Description {
     body: string;
 }
 
-interface Item {
+export interface Item {
     title: string;
     img: string;
     desc: Description[];
