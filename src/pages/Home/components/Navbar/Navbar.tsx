@@ -26,12 +26,7 @@ export default function NavbarComponent() {
                         isMenuOpen ? "Close menu" : "Open menu"
                     }
                     className="sm:hidden"/>
-                <NavbarBrand>
-                    <img alt=""
-                        src={Image}
-                        className='logo-nav'/>
-                    <p className="font-bold">E.E.S.T N°5</p>
-                </NavbarBrand>
+
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4 mb-custom items-custom" justify="center">
