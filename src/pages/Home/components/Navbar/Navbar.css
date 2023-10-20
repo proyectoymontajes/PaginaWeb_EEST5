@@ -28,6 +28,14 @@
     max-height: 64px;
 }
 
+.brand-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
 .items-custom {
     width: 458px;
     justify-content: space-between !important;

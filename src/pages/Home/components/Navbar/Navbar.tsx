@@ -5,13 +5,13 @@ import {NavItems} from './components/NavItems';
 
 import {
     Navbar,
-    NavbarBrand,
     NavbarContent,
     NavbarMenuToggle,
     NavbarMenu,
     NavbarMenuItem,
 } from "@nextui-org/react";
 
+import { Brand } from "./components/Brand";
 
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -26,12 +26,7 @@ export default function NavbarComponent() {
                         isMenuOpen ? "Close menu" : "Open menu"
                     }
                     className="sm:hidden"/>
-                <NavbarBrand>
-                    <img alt=""
-                        src={Image}
-                        className='logo-nav'/>
-                    <p className="font-bold">E.E.S.T N°5</p>
-                </NavbarBrand>
+                    <Brand img={Image} />
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4 mb-custom items-custom" justify="center">
