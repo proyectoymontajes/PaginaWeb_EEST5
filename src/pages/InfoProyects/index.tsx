@@ -1,12 +1,26 @@
 import './InfoProyects.css';
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import {useParams} from 'react-router';
+import {items} from "../../data/dataProyects";
 
 const InfoProyects = () => {
+
+    const proyectId = useParams().proyectId;
+
+    // const proyect = items.find(proyect => proyect.items.map(item => (item.title)) === proyectId);
+
+    const section = items.find(proyect => proyect.items.some(item => item.title === proyectId));
+
+    const proyect = section ?. items.find(proyecto => proyecto.title)
+
     return (
         <>
             <div className='header-proyect'>
-                <h1 className='title-proyect'>Nombre del proyecto a mostrar</h1>
+                <h1 className='title-proyect'>
+                    {
+                    proyect ?. title
+                }</h1>
                 <div className="by-date-proyect">
                     <div className="by">
                         <PersonIcon className='icon'/>
@@ -22,14 +36,15 @@ const InfoProyects = () => {
                 </div>
             </div>
             <div className="description-proyect">
-              <h3 className='title-description'>Acerca del proyecto</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat dolorem eveniet provident eius quas, illum atque, non est quae at, incidunt voluptas officia quisquam sapiente hic in nostrum consequuntur.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis explicabo rerum nemo sunt aut repudiandae? Vel, labore dignissimos dolore quam accusamus qui quod quis, harum nesciunt, repellendus similique ullam ipsa?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi temporibus perspiciatis facere eos eaque repudiandae quisquam labore harum, necessitatibus inventore voluptatibus velit, minus provident totam! Placeat culpa dolore magni suscipit?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sunt ratione assumenda maiores itaque at, quis molestiae libero voluptatem ex, fugit quae enim, doloremque exercitationem consequuntur minus dolor ad cupiditate.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sunt ratione assumenda maiores itaque at, quis molestiae libero voluptatem ex, fugit quae enim, doloremque exercitationem consequuntur minus dolor ad cupiditate.
-              </p>
-            </div>
+                {
+                proyect ?. desc.map(desc => (
+                    <>
+                        <h3 className='title-description'>{desc.title}</h3>
+                        <p>{desc.body}</p>
+                    </>
+
+                ))
+            } </div>
         </>
     )
 }
