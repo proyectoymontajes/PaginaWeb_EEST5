@@ -1,8 +1,14 @@
 import CardProyect from "../../../../components/CardProyect"
 import './Proyectos.css';
+import { useNavigate } from "react-router-dom";
 
 
 export const Proyectos = () => {
+
+    const navigate = useNavigate()
+
+    
+
     return (
         <>
             <h1 className="title-proyects" id='proyects'>PROYECTOS</h1>
@@ -13,7 +19,7 @@ export const Proyectos = () => {
                     <CardProyect img='https://matias-rolon.github.io/pagina_IoT.github.io/WhatsApp%20Image%202022-11-24%20at%2014.13.13.jpeg' title='Internet de las cosas'/>
                 </div>
             </div>
-            <div className='read-more'>
+            <div className='read-more' onClick={ () => navigate("/proyects") }>
                 <p className='text-read-more'>VER MÁS PROYECTOS</p>
                 <div className="spacer"></div>
                 <p className="arrow-read-more"> → </p>

@@ -17,3 +17,35 @@
     height: 70px;
     margin-right: 10px;
 }
+
+.mb-custom {
+    margin-bottom: 16px;
+    padding-left: 32px;
+}
+
+.brand {
+    max-width: 221px;
+    max-height: 64px;
+}
+
+.brand-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.items-custom {
+    width: 458px;
+    justify-content: space-between !important;
+}
+
+.items-extend {
+    max-width: 249px;
+}
+
+.item {
+    color: #fff;
+    text-decoration: none;
+}
