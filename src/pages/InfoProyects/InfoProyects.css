@@ -12,14 +12,14 @@
   .contain-image-proyect {
     display: flex;
     justify-content: center;
-    max-width: 1000px; /* Establecer el ancho máximo */
-    margin: 0 auto; /* Centrar horizontalmente */
-    overflow: hidden; /* Evitar que la imagen se desborde */
+    max-width: 1000px;
+    margin: 0 auto; 
+    overflow: hidden;
   }
 
   .contain-image-proyect img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 800px;
     margin-bottom: 20px;
   }
 
@@ -56,4 +56,16 @@
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 30px;
+}
+
+.image-description {
+  height: auto;
+  max-height: 350px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.body-description {
+  font-size: 18.5px;
+  margin-bottom: 20px;
 }
