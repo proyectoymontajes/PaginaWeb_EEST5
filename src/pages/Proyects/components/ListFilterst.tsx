@@ -10,6 +10,8 @@ export const ListFilterst = () => {
         <>
             <ul>
                 <h3>Filtros</h3>
+                <div className='contain-filters'>
+
                 {
                     itemList.map((item) => (
                         <li key={item}>
@@ -17,6 +19,7 @@ export const ListFilterst = () => {
                         </li>
                     ))
                 }
+                </div>
             </ul>
         </>
     )
