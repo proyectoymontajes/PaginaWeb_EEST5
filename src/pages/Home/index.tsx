@@ -84,7 +84,8 @@ const Home = () => {
                         <h1 style={
                             {
                                 display: 'block',
-                                fontWeight: '600'
+                                fontWeight: '600',
+                                fontSize: '40px',
                             }
                         }>Escuela Técnica N°5 Temperley.</h1>
                     </div>
@@ -92,7 +93,6 @@ const Home = () => {
             </div>
             <Proyectos/>
             <SobreNosotros/>
-            <Carousel/>
         </>
 
     )
