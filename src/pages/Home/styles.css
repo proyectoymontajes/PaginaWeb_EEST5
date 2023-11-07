@@ -1,6 +1,7 @@
 /* Estilos de proyectos */
 
 .title-about-us-section {
+    font-size: 50px;
     background-color: white;
     margin-bottom: -10px;
     padding: 30px;
@@ -9,9 +10,9 @@
     text-align: center;
     font-weight: bold;
     color: black;
-
-
 }
+
+
 
 .contain-about-us {
     background-color: white;
@@ -46,6 +47,8 @@
 .title-about-us {
     color: black;
     background-color: transparent;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .contain-img-about-us {
@@ -87,11 +90,18 @@
     .title-header {
         font-size: 30px;
     }
+    
 }
 
 @media (max-width: 500px){
     .title-header{
         font-size: 20px;
+    }
+}
+
+@media (max-width: 370px) {
+    .title-about-us-section {
+        font-size: 30px;
     }
 }
 
@@ -105,11 +115,10 @@
         width: 100%;
     }
 
-    /* Estilo cuando la imagen está a la derecha */
     .contain-info-about-us.img-right {
         background-color: transparent;
         display: block;
-        flex-direction: row-reverse; /* Cambiamos el orden de los elementos cuando la imagen está a la derecha */
+        flex-direction: row-reverse; 
         justify-content: space-between;
         align-items: center;
         width: 100%;
@@ -119,3 +128,29 @@
         overflow: hidden;
     }
 }
+
+@media (max-width: 800px) {
+    .contain-info-about-us.img-left,
+    .contain-info-about-us.img-right {
+        flex-direction: column; /* Cambiar a un diseño de columna */
+        align-items: center; /* Centrar elementos verticalmente */
+    }
+
+    .contain-img-about-us {
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .img-about-us {
+        width: 100%; /* Ajustar la imagen al ancho de la pantalla */
+        height: auto; /* Mantener la proporción original de la imagen */
+        margin-right: 0; /* Eliminar margen derecho */
+        margin-bottom: 10px; /* Agregar margen inferior para separar la imagen del texto */
+    }
+}
+
+
+
+
+
+
