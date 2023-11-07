@@ -2,53 +2,68 @@
     background-color: black;
     color: white;
     text-align: center;
-  }
-  
-  .title-proyect {
+}
+
+.contain-title {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.title-proyect {
+    flex: 1;
     font-size: 50px;
     font-weight: 400;
-  }
-  
-  .contain-image-proyect {
+    margin: 0;
+}
+
+.icon-back {
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.contain-image-proyect {
     display: flex;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow: hidden;
-  }
+}
 
-  .contain-image-proyect img {
+.contain-image-proyect img {
     width: auto;
     max-height: 800px;
     margin-bottom: 20px;
-  }
+}
 
-  
-  .by-date-proyect {
+
+.by-date-proyect {
     max-width: 1000px;
-    margin: 5px auto; 
+    margin: 5px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .by {
+}
+
+.by {
     display: flex; /* Alinear el icono y el texto horizontalmente */
     align-items: center; /* Centrar verticalmente */
     opacity: 0.8;
-  }
-  
-  .date {
+}
+
+.date {
     display: flex; /* Alinear el icono y el texto horizontalmente */
     align-items: center; /* Centrar verticalmente */
     opacity: 0.8;
-  }
-  
-  .icon {
+}
+
+.icon {
     margin-right: 5px;
-  }
-  
-.description-proyect{
+}
+
+.description-proyect {
     padding: 20px;
 }
 
@@ -59,13 +74,13 @@
 }
 
 .image-description {
-  height: auto;
-  max-height: 350px;
-  display: inline;
-  margin-bottom: 10px;
+    height: auto;
+    max-height: 350px;
+    display: inline;
+    margin-bottom: 10px;
 }
 
 .body-description {
-  font-size: 18.5px;
-  margin-bottom: 20px;
+    font-size: 18.5px;
+    margin-bottom: 20px;
 }

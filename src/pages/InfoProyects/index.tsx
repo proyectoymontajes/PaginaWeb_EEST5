@@ -4,8 +4,13 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { useParams } from 'react-router';
 import { items } from "../../data/dataProyects";
 import { useEffect } from 'react';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useNavigate } from 'react-router-dom'
+
 
 const InfoProyects = () => {
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,7 +41,12 @@ const InfoProyects = () => {
   return (
     <>
       <div className='header-proyect'>
-        <h1 className='title-proyect'>{proyect.title}</h1>
+        <div className='contain-title'>
+          <div onClick={() =>  navigate(-1)}>
+            <ArrowBackIcon style={{ fontSize: '38px', cursor:'pointer' }}/>
+          </div>
+          <h1 className='title-proyect'>{proyect.title}</h1>
+        </div>
         <div className="by-date-proyect">
           <div className="by">
             <PersonIcon className='icon' />
