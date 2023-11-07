@@ -68,7 +68,7 @@ const Home = () => {
                                 <Robot/>
 
                             </Suspense>
-                            <OrbitControls/>
+                            <OrbitControls enableZoom={false}/>
                         </Canvas>
                     </div>
                     <div style={
