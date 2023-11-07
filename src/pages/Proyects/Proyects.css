@@ -150,4 +150,9 @@
     .category h2 {
         margin-left: 15px;
     }
+
+    .menu-proyects input {
+        width: 300px;
+    }
+
 }
