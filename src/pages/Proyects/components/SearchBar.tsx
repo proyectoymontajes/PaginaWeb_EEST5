@@ -1,15 +1,15 @@
 // import SearchIcon from '@mui/icons-material/Search';
 import { FormEventHandler,
-    //  useContext, 
+     useContext, 
      useState } from 'react';
-// import { listContext } from '../context/ListContext';
+import { listContext } from '../context/ListContext';
 
 
 export const SearchBar = () => {
 
     const [value, setValue] = useState('');
 
-    // const {filterItemsByName} = useContext(listContext)
+    const {filterItemsByName} = useContext(listContext)
 
     const handleChange: React.ChangeEventHandler<HTMLInputElement> = ({ target }) => {
         const { value } = target;
@@ -18,7 +18,7 @@ export const SearchBar = () => {
 
     const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
         event.preventDefault();
-        // filterItemsByName(value);
+        filterItemsByName(value);
     }
 
     return (
