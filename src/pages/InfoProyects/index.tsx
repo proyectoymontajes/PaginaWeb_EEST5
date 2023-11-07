@@ -3,8 +3,14 @@ import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { useParams } from 'react-router';
 import { items } from "../../data/dataProyects";
+import { useEffect } from 'react';
 
 const InfoProyects = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const proyectId = useParams().proyectId;
 
   let proyect = null;
@@ -18,7 +24,6 @@ const InfoProyects = () => {
   }
 
   if (!proyect) {
-    // Manejar el caso en el que no se encuentre el componente
     return (
       <div>
         <p>El componente no se ha encontrado.</p>

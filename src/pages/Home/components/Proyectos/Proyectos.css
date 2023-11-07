@@ -7,7 +7,7 @@
 
 .title-proyects {
     background-color: black;
-
+    font-size: 50px;
     margin-bottom: -10px;
     padding: 20px;
     width: 100%;
@@ -66,4 +66,10 @@
     font-size: 30px;
     background-color: transparent;
     margin-left: auto;
+}
+
+@media (max-width: 360px) {
+    .title-proyects{
+        font-size: 30px;
+    }
 }

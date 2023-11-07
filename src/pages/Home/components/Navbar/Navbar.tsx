@@ -16,8 +16,6 @@ import { Brand } from "./components/Brand";
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-
-
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen}
             className="dark nav">
