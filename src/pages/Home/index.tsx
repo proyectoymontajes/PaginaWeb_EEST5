@@ -1,6 +1,5 @@
 import {Proyectos} from './components/Proyectos/Proyectos';
 import {SobreNosotros} from './components/SobreNosotros/SobreNosotros';
-import {Carousel} from './components/Carousel/Carousel';
 import {Canvas} from 'react-three-fiber';
 import {Robot} from '../../components/3d/Robot';
 import {Suspense, useEffect, useState} from 'react';
@@ -81,18 +80,12 @@ const Home = () => {
                             color: '#000'
                         }
                     }>
-                        <h1 style={
-                            {
-                                display: 'block',
-                                fontWeight: '600'
-                            }
-                        }>Escuela Técnica N°5 Temperley.</h1>
+                        <h1 className='title-header'>Escuela Técnica N°5 Temperley.</h1>
                     </div>
                 </div>
             </div>
             <Proyectos/>
             <SobreNosotros/>
-            <Carousel/>
         </>
 
     )

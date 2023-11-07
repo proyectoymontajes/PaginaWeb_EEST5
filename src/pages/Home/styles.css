@@ -1,4 +1,3 @@
-
 /* Estilos de proyectos */
 
 .title-about-us-section {
@@ -18,21 +17,21 @@
     background-color: white;
     padding: 30px;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .contain-info-about-us {
     background-color: transparent;
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .contain-text {
     background-color: transparent;
-    flex: 1; 
+    flex: 1;
 }
 
 .contain-title-about-us {
@@ -78,7 +77,25 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 860px) {
+.title-header {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+
+@media (max-width: 755px){
+    .title-header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .title-header{
+        font-size: 20px;
+    }
+}
+
+@media only screen and(max-width: 860px) {
     .contain-info-about-us.img-left {
         background-color: transparent;
         display: block;
@@ -87,7 +104,7 @@
         align-items: center;
         width: 100%;
     }
-    
+
     /* Estilo cuando la imagen está a la derecha */
     .contain-info-about-us.img-right {
         background-color: transparent;
