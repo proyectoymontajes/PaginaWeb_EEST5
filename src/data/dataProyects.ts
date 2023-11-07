@@ -1,3 +1,5 @@
+import { alarma, araña, autoSmart, dispenser, iot, smartTec } from "../assets/imgs";
+
 interface Description {
     title: string;
     body?: string[];
@@ -26,7 +28,7 @@ export const items: Category[] = [
             {
                 title: "SMART-TEC",
                 members:"Franco   Penayo, Elías Patiño, Bruno Isaías",
-                img: 'https://github.com/matias-rolon/img-proyectos/blob/main/smart-tec.png?raw=true',
+                img: smartTec,
                 day: "13/11/2021",
                 desc: [
                     {
@@ -67,7 +69,7 @@ export const items: Category[] = [
             {
                 title: "ARAÑA ROBOTICA",
                 members:"Castro Nicolás, Campusano Nicolás, Joaquín Correa",
-                img: 'https://github.com/matias-rolon/img-proyectos/blob/main/ara%C3%B1a.png?raw=true',
+                img: araña,
                 day: "10/11/2021",
                 desc: [
                     {
@@ -97,7 +99,7 @@ export const items: Category[] = [
             {
                 title: "CENTRAL DE ALARMA TFG",
                 members:"Fernández Nicolás, Fonseca Ariel, Tarqui Braian",
-                img: 'https://github.com/matias-rolon/img-proyectos/blob/main/Alarma-tfg.png?raw=true',
+                img: alarma,
                 day: " 1/10/2021",
                 desc: [
                     {
@@ -129,7 +131,7 @@ export const items: Category[] = [
                 title: "DISPENSER AUTOMATICO",
                 members: 'Vasconcel Franco, Gonzalez Leandro, Sosa Joaquin, Nicolas Maulin',
                 day: '--/--/--',
-                img: 'https://github.com/matias-rolon/img-proyectos/blob/main/dispenser-auto.png?raw=true',
+                img: dispenser,
                 desc: [
                     {
                         title: 'Acerca del proyecto',
@@ -164,7 +166,7 @@ export const items: Category[] = [
                 title: "AUTO SMART",
                 members: 'Maximiliano Barzola, Dal Degan Santiago',
                 day: '12/11/2021',
-                img: 'https://github.com/matias-rolon/img-proyectos/blob/main/auto-smart.png?raw=true',
+                img: autoSmart,
                 desc: [
                     {
                         title: 'Acerca del proyecto',
@@ -206,7 +208,7 @@ export const items: Category[] = [
                 title: "IOT",
                 members: 'Romero Gabriel, Rolon Matias',
                 day: '12/11/2022',
-                img: 'https://matias-rolon.github.io/pagina_IoT.github.io/WhatsApp%20Image%202022-11-24%20at%2014.13.13.jpeg',
+                img: iot,
                 desc: [
                     {
                         title: 'Acerca del proyecto',
