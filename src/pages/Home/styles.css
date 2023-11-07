@@ -1,10 +1,9 @@
-/* Estilos de proyectos */
 
 .title-about-us-section {
     font-size: 50px;
     background-color: white;
     margin-bottom: -10px;
-    padding: 30px;
+    padding: 10px;
     width: 100%;
     display: block;
     text-align: center;
@@ -12,73 +11,20 @@
     color: black;
 }
 
-
-
-.contain-about-us {
-    background-color: white;
-    padding: 30px;
-    display: flex;
-    align-items: center;
+.body-about-us {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
 }
 
-.contain-info-about-us {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
 .contain-text {
     background-color: transparent;
     flex: 1;
 }
 
-.contain-title-about-us {
-    background-color: transparent;
-}
 
-.description-about-us {
-    color: black;
-    background-color: transparent;
-}
-
-.title-about-us {
-    color: black;
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 17px;
-}
-
-.contain-img-about-us {
-    background-color: transparent;
-}
-
-.img-about-us {
-    width: 400px;
-    height: 200px;
-    margin-right: 8px;
-}
-
-.contain-info-about-us.img-left {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* Estilo cuando la imagen está a la derecha */
-.contain-info-about-us.img-right {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row-reverse; /* Cambiamos el orden de los elementos cuando la imagen está a la derecha */
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
 .title-header {
     font-weight: 600;
@@ -96,56 +42,6 @@
 @media (max-width: 500px){
     .title-header{
         font-size: 20px;
-    }
-}
-
-@media (max-width: 370px) {
-    .title-about-us-section {
-        font-size: 30px;
-    }
-}
-
-@media only screen and(max-width: 860px) {
-    .contain-info-about-us.img-left {
-        background-color: transparent;
-        display: block;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .contain-info-about-us.img-right {
-        background-color: transparent;
-        display: block;
-        flex-direction: row-reverse; 
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    .contain-img-about-us {
-        text-align: center;
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 800px) {
-    .contain-info-about-us.img-left,
-    .contain-info-about-us.img-right {
-        flex-direction: column; /* Cambiar a un diseño de columna */
-        align-items: center; /* Centrar elementos verticalmente */
-    }
-
-    .contain-img-about-us {
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .img-about-us {
-        width: 100%; /* Ajustar la imagen al ancho de la pantalla */
-        height: auto; /* Mantener la proporción original de la imagen */
-        margin-right: 0; /* Eliminar margen derecho */
-        margin-bottom: 10px; /* Agregar margen inferior para separar la imagen del texto */
     }
 }
 
