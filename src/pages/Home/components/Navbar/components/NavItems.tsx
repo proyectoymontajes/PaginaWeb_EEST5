@@ -4,6 +4,17 @@ import { NavLink } from 'react-router-dom';
 import '../Navbar.css';
 
 export const NavItems = ({ closeMenu }:{closeMenu: () => void}) => {
+
+    const scrollToSection = (section: string) => {
+        const sectionScroll = document.getElementById(section);
+
+        if (sectionScroll) {
+            sectionScroll.scrollIntoView({
+                behavior: 'smooth', 
+                block: 'start',     
+            });
+        }
+    };
     return (
         <>
             <NavbarItem>
@@ -19,7 +30,10 @@ export const NavItems = ({ closeMenu }:{closeMenu: () => void}) => {
             </NavbarItem>
 
             <NavbarItem>
-                <NavLink className="item" to="/about" onClick={closeMenu}>
+                <NavLink className="item" to="/" onClick={() => {
+                    closeMenu()
+                    scrollToSection('about-us')
+                }}>
                     Sobre nosotros
                 </NavLink>
             </NavbarItem>
