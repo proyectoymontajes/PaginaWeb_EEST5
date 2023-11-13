@@ -14,7 +14,12 @@ import {
 import { Brand } from "./components/Brand";
 
 export default function NavbarComponent() {
+
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
 
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen}
@@ -28,12 +33,12 @@ export default function NavbarComponent() {
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4 mb-custom items-custom" justify="center">
-                <NavItems/>
+                <NavItems closeMenu={closeMenu} />
             </NavbarContent>
             <NavbarContent className="mb-custom items-extend" justify="end" />
             <NavbarMenu className="menu mb-custom">
                 <NavbarMenuItem>
-                    <NavItems/>
+                    <NavItems closeMenu={closeMenu} />
                 </NavbarMenuItem>
             </NavbarMenu>
         </Navbar>

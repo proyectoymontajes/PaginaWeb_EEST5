@@ -141,4 +141,18 @@
     .contain-filters {
         display: flex;
     }
+
+    .list-proyects {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .category h2 {
+        margin-left: 15px;
+    }
+
+    .menu-proyects input {
+        width: 300px;
+    }
+
 }
