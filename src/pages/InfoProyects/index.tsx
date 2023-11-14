@@ -36,8 +36,6 @@ const InfoProyects = () => {
     );
   }
 
-  console.log(proyectId);
-
   return (
     <>
       <div className='header-proyect'>
