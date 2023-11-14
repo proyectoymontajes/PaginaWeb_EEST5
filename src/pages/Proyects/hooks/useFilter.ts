@@ -36,7 +36,7 @@ export const useFilter = (state: Category[]) => {
     }
 
     const filterItemsByName = (search: string) => {
-        const result = state.map((category) => {
+        const result = items.map((category) => {
             return {
                 ...category,
                 items : category.items.filter( (item)=> item.title.toLowerCase().includes( search.toLowerCase()) ),
