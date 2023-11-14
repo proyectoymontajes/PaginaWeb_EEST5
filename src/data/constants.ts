@@ -3,36 +3,30 @@ import { bona1, bona2, bona3 } from "../assets";
 
 export const achievement = [
     {
-      title: "campeones 1 ",
+      title: "Medalla de oro ⭐",
       icon : bona1,
       iconBg: "#383E56",
       date: "2019",
       points: [
-        "rellenar",
-        "rellenar",
-        "rellenar",
+        "Campeones bonaerenses de robotica 2019",
       ],
     },
     {
-      title: "campeones 2 ",
+      title: "Medalla de oro ⭐⭐",
       icon : bona2,
       iconBg: "#E6DEDD",
       date: "2022",
       points: [
-        "rellenar",
-        "rellenar",
-        "rellenar",
+        "Campeones bonaerenses de robotica 2022",
       ],
     },
     {
-        title: "campeones 3 ",
+        title: "Medalla de oro ⭐⭐⭐",
         icon : bona3,
         iconBg: "#E6DEDD",
         date: "2023",
         points: [
-          "rellenar",
-          "rellenar",
-          "rellenar",
+          "Campeones bonaerenses de robotica 2023",
         ],
       },
   ];
