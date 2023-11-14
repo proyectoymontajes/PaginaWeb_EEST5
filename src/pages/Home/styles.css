@@ -11,6 +11,17 @@
     overflow: hidden;
 }
 
+.title-home{
+    font-size: 90px;
+    color: white;
+    font-weight: 800;
+}
+
+.title-home-sub{
+    font-size: 90px;
+    color: #00f7ff;
+    font-weight: 800;
+}
 
 
 .title-about-us-section {
