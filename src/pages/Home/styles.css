@@ -1,3 +1,17 @@
+.container-home{
+    width: auto;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat url("../../assets/back.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
 
 .title-about-us-section {
     font-size: 50px;
