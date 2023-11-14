@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+.text-date{
+    color: #000;
+}
+
 .title-home{
     font-size: 90px;
     color: white;
@@ -54,6 +58,12 @@
 .title-header {
     font-weight: 600;
     font-size: 50px;
+}
+
+@media (max-width: 1169px){
+    .text-date{
+        color: #fff;
+    }   
 }
 
 

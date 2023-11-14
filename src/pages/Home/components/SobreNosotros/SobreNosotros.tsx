@@ -1,4 +1,5 @@
 import '../../styles.css'
+import Timeline from './Timeline'
 
 export const SobreNosotros = () => {
     return (
@@ -7,6 +8,9 @@ export const SobreNosotros = () => {
             <div className='body-about-us'>
                 <p>Somos el taller del departamento de electrónica del Industrial de Temperley. Es un espacio para desarrollar proyectos de electrónica vinculando el contenido de las materias con las nuevas tecnologias como robótica, inteligencia artificial, cloud computing, software, etc. Te invitamos a explorar y conocer más sobre los proyectos. ¡Gracias por visitar nuestra página web!</p>
             </div>
+
+
+            <Timeline /> 
         </div>
     )
 }
