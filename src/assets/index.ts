@@ -4,6 +4,7 @@ import bona2 from "./bona2.jpg"
 import bona3 from "./bona3.jpg"
 import roboticStats from './styleRobotica.gif'
 import robotic from './isometric.png'
+import roboticAbout from './aboutRobotic.png'
 
 
 export {
@@ -12,4 +13,5 @@ export {
     bona3,
     roboticStats,
     robotic,
+    roboticAbout,
 }
