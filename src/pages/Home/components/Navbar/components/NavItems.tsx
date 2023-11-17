@@ -30,11 +30,11 @@ export const NavItems = ({ closeMenu }:{closeMenu: () => void}) => {
             </NavbarItem>
 
             <NavbarItem>
-                <NavLink className="item" to="/" onClick={() => {
+                <NavLink className="item" to="/robotica" onClick={() => {
                     closeMenu()
                     scrollToSection('about-us')
                 }}>
-                    Sobre nosotros
+                    Club Robotica
                 </NavLink>
             </NavbarItem>
 

@@ -20,6 +20,10 @@ const routes: Route[] = [
     {
         path:"/proyects/:proyectId",
         element: lazy( ()=> import("../pages/InfoProyects") )
+    },
+    {
+        path:"/robotica",
+        element: lazy( ()=> import("../pages/roboticaPage/RoboticaPage") )
     }
 ]
 

@@ -1,0 +1,25 @@
+.roboticaPage {
+    width: 100vw;
+    height: calc(50vh - 84px);
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.titleRobotica{
+    font-weight: 800;
+    font-size:70px;
+}
+
+.roboticaPage-Img {
+    height: 400px;
+}
+
+.ml10{
+    margin-left: 10%;
+}
+
+.mr10{
+    margin-right: 10%;
+}
