@@ -1,6 +1,6 @@
 .roboticaPage {
     width: 100vw;
-    height: calc(50vh - 84px);
+    height:auto;
     overflow: hidden;
     justify-content: space-between;
     align-items: center;
@@ -9,25 +9,27 @@
 
 .titleRobotica {
     font-weight: 800;
-    font-size: 70px;
+    font-size: 370%;
+    overflow: hidden;
 }
 
 .roboticaPage-Img {
     height: 400px;
 }
 
-.ml10 {
+/* .ml10 {
     margin-left: 10%;
 }
 
 .mr10 {
     margin-right: 10%;
-}
+} */
 
 .aboutRobotic {
     width: 100vw;
-    height: 40vh;
+    height: 45vh;
     background-color: #b0c3ff;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +52,7 @@
 
 .description-container{
     display: flex;
+    height: 200px;
 }
 
 .img-description {
@@ -57,7 +60,7 @@
     border-radius: 100%;
     margin-left: 40px;
     margin-top: -3%;
-    height: 300px;
+    height: 220px;
 }
 
 .lnr-container{
