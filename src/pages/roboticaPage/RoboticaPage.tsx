@@ -1,9 +1,10 @@
-import { robotic, roboticAbout, roboticStats } from '../../assets'
+import { logoLnr, robotic, roboticAbout, roboticStats } from '../../assets'
+import Timeline from '../Home/components/SobreNosotros/Timeline'
 import './index.css'
 
 const RoboticaPage = () => {
   return (
-    <>
+    <div style={{ overflow: 'hidden' }}>
       <div className='roboticaPage'>
         <img src={roboticStats} alt='roboticStats' className='roboticaPage-Img ml10' />
         <h1 className='titleRobotica'>Club de Robotica</h1>
@@ -18,7 +19,20 @@ const RoboticaPage = () => {
           <img className='img-description' src={roboticAbout} alt="image computer and code" />
         </div>
       </div>
-    </>
+
+      <Timeline />
+
+      <div className='lnr-container'>
+        <h2 className='subtitle text-center'>Nuestro camino por la Liga Nacional</h2>
+        <div className="desc-lnr">
+          <div className='robotic-description'>
+          <p className=''>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur asperiores facilis quae aut vitae officiis numquam, reiciendis illum esse atque maiores ducimus molestiae quidem aliquam quasi pariatur, eius ut. Amet.</p>
+          </div>
+          <img className='logo-lnr' src={logoLnr} alt="" />
+        </div>
+      </div>
+
+    </div>
   )
 }
 

@@ -26,21 +26,26 @@
 
 .aboutRobotic {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     background-color: #b0c3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25%;
 }
 
 .subtitle {
     font-weight: 600;
     font-size: 40px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 10px;
 }
 
 .robotic-description {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 10px;
     max-width: 60%;
+    height: 50%;
 }
 
 .description-container{
@@ -50,6 +55,29 @@
 .img-description {
     background-color: #fff;
     border-radius: 100%;
+    margin-left: 40px;
     margin-top: -3%;
-    margin-left: 30px;
+    height: 300px;
+}
+
+.lnr-container{
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+}
+
+.logo-lnr{
+    margin-left: 40px;
+    height: 200px;
+}
+
+.desc-lnr{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 200px;
+}
+
+.size-desc{
+    font-size: 23px;
 }
