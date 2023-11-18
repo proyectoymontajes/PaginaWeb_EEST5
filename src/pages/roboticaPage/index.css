@@ -10,7 +10,6 @@
 .titleRobotica {
     font-weight: 800;
     font-size: 370%;
-    overflow: hidden;
 }
 
 .roboticaPage-Img {
@@ -83,4 +82,57 @@
 
 .size-desc{
     font-size: 23px;
+}
+
+@media screen and (max-width: 1060px) {
+    
+    .roboticaPage-Img{
+        height: 250px;
+    }
+
+    .titleRobotica {
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    .aboutRobotic {
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    
+    .roboticaPage-Img{
+        height: 250px;
+    }
+
+    .aboutRobotic {
+        padding-left: 10%;
+    }
+
+    .titleRobotica {
+        font-weight: 800;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .roboticaPage {
+        flex-direction: column;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .aboutRobotic {
+        padding-left: none;
+        justify-content: start;
+    }
+
+    .titleRobotica {
+        font-size: 40px;
+    }
+
 }
