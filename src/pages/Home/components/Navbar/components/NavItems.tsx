@@ -34,6 +34,7 @@ export const NavItems = ({ closeMenu }:{closeMenu: () => void}) => {
                     closeMenu()
                     scrollToSection('about-us')
                 }}>
+                    
                     Sobre nosotros
                 </NavLink>
             </NavbarItem>
