@@ -1,5 +1,5 @@
 import './InfoProyects.css';
-import PersonIcon from '@mui/icons-material/Person';
+import Person2Icon from '@mui/icons-material/Person2';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { useParams } from 'react-router';
 import { items } from "../../data/dataProyects";
@@ -49,7 +49,7 @@ const InfoProyects = () => {
         </div>
         <div className="by-date-proyect">
           <div className="by">
-            <PersonIcon className='icon' />
+            <Person2Icon className='icon'/>
             <span>{proyect.members}</span>
           </div>
           <div className="date">
