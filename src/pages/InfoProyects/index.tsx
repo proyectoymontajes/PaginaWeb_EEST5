@@ -1,10 +1,7 @@
 import './InfoProyects.css';
-import Person2Icon from '@mui/icons-material/Person2';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { useParams } from 'react-router';
 import { items } from "../../data/dataProyects";
 import { useEffect } from 'react';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom'
 
 
@@ -43,18 +40,17 @@ const InfoProyects = () => {
       <div className='header-proyect'>
         <div className='contain-title'>
           <div onClick={() =>  navigate(-1)}>
-            <ArrowBackIcon style={{ fontSize: '38px', cursor:'pointer' }}/>
+            {/* <ArrowBackIcon style={{ fontSize: '38px', cursor:'pointer' }}/> */}
+            <p style={{ fontSize: '38px', cursor:'pointer' }}>←</p>
           </div>
           <h1 className='title-proyect'>{proyect.title}</h1>
         </div>
         <div className="by-date-proyect">
           <div className="by">
-            <Person2Icon className='icon'/>
             <span>{proyect.members}</span>
           </div>
           <div className="date">
             <p>{proyect.day}</p>
-            <CalendarMonthIcon className='icon' />
           </div>
         </div>
         <div className="contain-image-proyect">
