@@ -59,7 +59,7 @@ export const ItemDropdown = () => {
                 <DropdownItem key="usage_metrics"
                     startContent={<InstagramIcon/>}>
                     <Link color="foreground" target="_blank" href="https://www.instagram.com/">
-                        @robotica
+                        @robotic
                     </Link>
                 </DropdownItem>
             </DropdownMenu>
